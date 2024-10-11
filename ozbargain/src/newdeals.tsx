@@ -5,7 +5,6 @@ export function NewDeals () {
         <>
         <div id="card-set-container-new">
         <div id="card-set-new">
-
             <DealCard/>
             <DealCard/>
             <DealCard/>
@@ -14,7 +13,6 @@ export function NewDeals () {
             <DealCard/>
             <DealCard/>
             <DealCard/>
-            
         </div>
         </div>
 
@@ -28,8 +26,6 @@ export function NewDeals () {
             <DealCard/>
             <DealCard/>
             <DealCard/>
-
-            
         </div>
         </div>
         </>
