@@ -434,15 +434,12 @@ export function Header() {
     <div className="relative">
     <Navbar className="mx-auto max-w-screen-3xl px-4 py-2 rounded-none shadow-none absolute" color="transparent" >
       <div className="flex items-center justify-between text-white">
-        <Typography
-          as="a"
-          href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
-          color="black"
+        <div
+
+          style={{fontFamily:"DMSans, sans-sarif", fontSize:"24px", color:"white", fontWeight:"600"}}
         >
-          OzBargain Clone
-        </Typography>
+          OZBARGAIN CLONE
+        </div>
         <div className="hidden lg:block">
           <NavList />
         </div>
@@ -478,7 +475,7 @@ export function Header() {
     </Navbar>
 
     <div className="relative h-full w-full" style={{zIndex:"-1"}}>
-      <div id="welcomeimage" style={{height:"500px"}} >
+      <div id="welcomeimage" style={{height:window.innerWidth > 440 ? "500px": "450px"}} >
     <img
       src={WelcomeImg}
       alt="image 1"
@@ -486,11 +483,14 @@ export function Header() {
       
     />
     </div>
-    <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/42">
-      <div className="w-3/4 md:w-2/4 mr-auto ml-20" style={{marginLeft: window.innerWidth > 440 ? "50px" : "auto"}} id="welcomefont">
-          <div style={{fontFamily:'Harmond, sans-sarif', fontSize: window.innerWidth > 440 ? "80px" : "60px"}}>Deals</div>
-          <div style={{fontFamily:'Harmond, sans-sarif', fontSize: window.innerWidth > 440 ? "40px" : "30px", marginLeft: window.innerWidth > 440 ? "100px" : "50px"}}>of the</div>
-          <div style={{fontFamily:'Harmond, sans-sarif', fontSize: window.innerWidth > 440 ? "80px" : "60px", marginLeft: window.innerWidth > 440 ? "120px" : "60px"}}>Future</div>
+    <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/10">
+      <div style={{width: window.innerWidth > 440 ? "150px" : "100px", height: window.innerWidth > 440 ? "150px" : "100px", border:"15px solid #5B3209", borderRadius: "50%", backgroundColor:"transparent", marginTop: window.innerWidth > 440 ? "-160px" : "-120px", marginLeft: window.innerWidth > 440 ? "500px": "100px"}}></div>
+      
+      <div className="w-3/4 md:w-2/4 mr-auto ml-20" style={{marginLeft: window.innerWidth > 440 ? "150px" : "auto"}} id="welcomefont">
+          <div style={{fontFamily:'Tropikal-Bold, sans-sarif', fontSize: window.innerWidth > 440 ? "100px" : "80px", marginLeft: window.innerWidth > 440 ? "80px" : "60px", color:"white"}}>Deals</div>
+          <div style={{fontFamily:'edwardianscriptitc, sans-sarif', fontSize: window.innerWidth > 440 ? "100px" : "80px", marginLeft: window.innerWidth > 440 ? "150px" : "120px", marginTop: window.innerWidth > 440 ? "-90px" : "-70px", color:"#5B3209"}}>of</div>
+          <div style={{fontFamily:'edwardianscriptitc, sans-sarif', fontSize: window.innerWidth > 440 ? "60px" : "40px", marginLeft: window.innerWidth > 440 ? "190px" : "150px", marginTop: window.innerWidth > 440 ? "-80px" : "-60px", color:"#5B3209"}}>the</div>
+          <div style={{fontFamily:'Tropikal-Bold, sans-sarif', fontSize: window.innerWidth > 440 ? "120px" : "100px", marginLeft: window.innerWidth > 440 ? "40px" : "20px", marginTop: window.innerWidth > 440 ? "-60px" : "-40px", color:"#5B3209"}}>future</div>
         {/* <Typography
           variant="h1"
           color="white"

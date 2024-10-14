@@ -1,49 +1,49 @@
 import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button,
-  } from "@material-tailwind/react";
-   
-  export function DealCard() {
-    return (
-      <Card className="w-18">
-        <CardHeader shadow={false} floated={false} className="h-56">
-          <img
-            src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
-            alt="card-image"
-            className="h-full w-full object-cover"
-          />
-        </CardHeader>
-        <CardBody>
-          <div className="mb-2 flex items-center justify-between">
-            <Typography color="blue-gray" className="font-medium">
-              Apple AirPods
-            </Typography>
-            <Typography color="blue-gray" className="font-medium">
-              $95.00
-            </Typography>
-          </div>
-          <Typography
-            variant="small"
-            color="gray"
-            className="font-normal opacity-75"
-          >
-            With plenty of talk and listen time, voice-activated Siri access, and
-            an available wireless charging case.
-          </Typography>
-        </CardBody>
-        <CardFooter className="pt-0">
-          <Button
-            ripple={false}
-            fullWidth={true}
-            className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-          >
-            Add to Cart
-          </Button>
-        </CardFooter>
-      </Card>
-    );
-  }
+  Card,
+  CardHeader,
+  CardBody,
+  Typography,
+  Avatar,
+} from "@material-tailwind/react";
+
+export function DealCard({ Title, Img, Time, comments }) {
+  return (
+    <Card
+      shadow={false}
+      className="relative grid h-[20rem] w-full max-w-[18rem] items-end justify-center overflow-hidden text-center"
+      style={{cursor:"pointer"}}
+    >
+      <CardHeader
+        floated={false}
+        shadow={false}
+        color="transparent"
+        className="absolute inset-0 m-0 h-full w-full rounded-none bg-cover bg-center"
+        style={{ backgroundImage: `url('${Img}')` }}
+      >
+        <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
+      </CardHeader>
+      <CardBody className="relative py-2 px-2 md:px-2">
+        <Typography
+          variant="h5"
+          color="white"
+          className="mb-6 font-medium leading-[1.5]"
+        >
+          {Title}
+        </Typography>
+        <Typography variant="h5" className="mb-4 text-gray-400">
+          {Time} Ago
+        </Typography>
+        <Typography variant="h5" className="mb-4 text-gray-400">
+          {comments} comments
+        </Typography>
+        {/* <Avatar
+          size="xl"
+          variant="circular"
+          alt="Profile picture"
+          className="border-2 border-white"
+          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        /> */}
+      </CardBody>
+    </Card>
+  );
+}

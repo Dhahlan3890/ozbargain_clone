@@ -12,6 +12,7 @@ function BackgroundBlogCard({ Heading, Name, Url }) {
     <Card
       shadow={true}
       className="relative grid h-[14rem] w-full max-w-[20rem] items-end justify-center overflow-hidden text-center"
+      style={{cursor:"pointer"}}
     >
       <CardHeader
         floated={false}

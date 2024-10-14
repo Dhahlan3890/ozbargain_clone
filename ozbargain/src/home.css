@@ -23,21 +23,21 @@
 }
 
 #card-set-container-new{
-    overflow-x: scroll; /* Use scroll to enable scrolling */
-    -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
+    overflow-x: scroll; 
+    -ms-overflow-style: none;  
     scrollbar-width: none;
     overflow-x: auto;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    white-space: nowrap; /* Make the cards loop and move right continuously */
+    /* white-space: nowrap;  */
       
   }
 
 #card-set-new{
 
-    display: inline-flex; /* Make the cards loop and move right continuously */
+    display: flex; 
     margin-top: 20px;
-    width: 4100px;
+    width: 8200px;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -45,8 +45,8 @@
     gap: 30px;
     display: flex;
     transition: transform 0.3s ease-in-out;
-    animation: scroll-right 20s linear infinite; /* Animation to scroll the cards */
-    white-space: nowrap; /* Prevent wrapping */
+    animation: scroll-right 20s linear infinite; 
+    /* white-space: nowrap;  */
 }
 
 @keyframes scroll-right {
@@ -54,14 +54,14 @@
         transform: translateX(0); /* Start at the initial position */
     }
     100% {
-        transform: translateX(-50%); /* Move the set by 50% of its width */
+        transform: translateX(-20%); /* Move the set by 50% of its width */
     }
 }
 
 #card-set-new-left{
     display: inline-flex; /* Make the cards loop and move right continuously */
     margin-top: 20px;
-    width: 4100px;
+    width: 8200px;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -70,12 +70,12 @@
     display: flex;
     transition: transform 0.3s ease-in-out;
     animation: scroll-left 20s linear infinite; /* Animation to scroll the cards */
-    white-space: nowrap; /* Prevent wrapping */
+    /* white-space: nowrap;  */
 }
 
 @keyframes scroll-left {
     0% {
-        transform: translateX(-50%); /* Start at the initial position */
+        transform: translateX(-20%); /* Start at the initial position */
     }
     100% {
         transform: translateX(0%); /* Move the set by 50% of its width */

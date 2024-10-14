@@ -8,5 +8,31 @@
     src: url(fonts/Harmond.otf);
 }
 
+@font-face {
+    font-family: Tropikal-Bold;
+    src: url(fonts/Tropikal-Bold.otf);
+}
+
+@font-face {
+    font-family: franklingothic;
+    src: url(fonts/franklingothic_demi.ttf);
+}
+
+@font-face {
+    font-family: edwardianscriptitc;
+    src: url(fonts/edwardianscriptitc.ttf);
+}
+
+@font-face {
+    font-family: segoeuithis;
+    src: url(fonts/segoeuithis.ttf);
+}
+
+
+@font-face {
+    font-family: DMSans;
+    src: url(fonts\DMSans_18pt-Bold.ttf);
+}
+
 
 

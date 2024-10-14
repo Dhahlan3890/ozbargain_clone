@@ -247,7 +247,7 @@ export function Sidebar() {
  
   return (
     <>
-    <button onClick={openDrawerLeft} className="shadow animate-bounce" style={{position:"fixed", top:"5rem"}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8">
+    <button onClick={openDrawerLeft} className="shadow animate-bounce" style={{position:"fixed", top:"5rem", display: window.innerWidth > 440 ? "none" : "flex"}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8">
       <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
     </svg>
     </button>
@@ -437,7 +437,7 @@ export function Sidebar() {
           </AccordionBody>
         </Accordion>
         <hr className="my-2 border-blue-gray-50" />
-        <ListItem>
+        {/* <ListItem>
           <ListItemPrefix>
             <InboxIcon className="h-5 w-5" />
           </ListItemPrefix>
@@ -463,7 +463,7 @@ export function Sidebar() {
             <PowerIcon className="h-5 w-5" />
           </ListItemPrefix>
           Log Out
-        </ListItem>
+        </ListItem> */}
       </List>
     </Card>
     </Drawer>
