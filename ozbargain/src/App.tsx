@@ -14,8 +14,9 @@ export default function App() {
       <div>
         <Sidebar/>
         <Typography
-        variant="h3"
-        className="ml-5 mt-20"
+          variant="h3"
+          className="ml-5 mt-20"
+          placeholder={null}
         >
           New Deals
         </Typography>
@@ -25,6 +26,7 @@ export default function App() {
         <Typography
         variant="h3"
         className="ml-5 mt-20"
+        placeholder={null}
         >
           Deals Chategories
         </Typography>
@@ -36,12 +38,13 @@ export default function App() {
           <Typography
           variant="h3"
           className="mt-20"
+          placeholder={null}
           >
             Competitions
           </Typography>
         </div>
         <div className="flex justify-center">
-        <Typography variant="h5" className="mb-4 text-gray-400">
+        <Typography variant="h5" className="mb-4 text-gray-400" placeholder={null}>
           Check out what's getting the most on OZBargain right now
         </Typography>
         </div>

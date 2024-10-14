@@ -11,7 +11,6 @@ import {
   MenuHandler,
   MenuList,
   MenuItem,
-  Input,
 } from "@material-tailwind/react";
 import {
   ChevronDownIcon,
@@ -47,7 +46,7 @@ function NavListMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = nestedMenuItems.map(({ title }, key) => (
     <a href="#" key={key}>
-      <MenuItem>{title}</MenuItem>
+      <MenuItem placeholder={null}>{title}</MenuItem>
     </a>
   ));
  
@@ -60,11 +59,12 @@ function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium">
+          <Typography as="div" variant="small" className="font-medium" placeholder={null}>
             <ListItem
               className="flex items-center gap-2 py-2 pr-4 font-medium text-white"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              placeholder={null}
             >
               Competitions
               <ChevronDownIcon
@@ -82,7 +82,7 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden rounded-xl lg:block">
+        <MenuList className="hidden rounded-xl lg:block" placeholder={null}>
           <Menu
             placement="right-start"
             allowHover
@@ -91,7 +91,7 @@ function NavListMenu() {
             handler={setopenNestedMenu}
           >
             <MenuHandler className="flex items-center justify-between">
-              <MenuItem>
+              <MenuItem placeholder={null}>
                 Catogory
                 <ChevronUpIcon
                   strokeWidth={2.5}
@@ -101,12 +101,12 @@ function NavListMenu() {
                 />
               </MenuItem>
             </MenuHandler>
-            <MenuList className="rounded-xl">{renderItems}</MenuList>
+            <MenuList className="rounded-xl" placeholder={null}>{renderItems}</MenuList>
           </Menu>
-          <MenuItem>Popular</MenuItem>
-          <MenuItem>Recent</MenuItem>
-          <MenuItem>Winners</MenuItem>
-          <MenuItem>Closed</MenuItem>
+          <MenuItem placeholder={null}>Popular</MenuItem>
+          <MenuItem placeholder={null}>Recent</MenuItem>
+          <MenuItem placeholder={null}>Winners</MenuItem>
+          <MenuItem placeholder={null}>Closed</MenuItem>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -119,7 +119,7 @@ function NavListMenu() {
             handler={setopenNestedMenu}
           >
             <MenuHandler className="flex items-center justify-between">
-              <MenuItem>
+              <MenuItem placeholder={null}>
                 Figma
                 <ChevronUpIcon
                   strokeWidth={2.5}
@@ -129,12 +129,12 @@ function NavListMenu() {
                 />
               </MenuItem>
             </MenuHandler>
-            <MenuList className="block rounded-xl lg:hidden">
+            <MenuList className="block rounded-xl lg:hidden" placeholder={null}>
               {renderItems}
             </MenuList>
           </Menu>
-          <MenuItem>React</MenuItem>
-          <MenuItem>TailwindCSS</MenuItem>
+          <MenuItem placeholder={null}>React</MenuItem>
+          <MenuItem placeholder={null}>TailwindCSS</MenuItem>
         </Collapse>
       </div>
     </React.Fragment>
@@ -165,7 +165,7 @@ function NavListMenu() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = nestedMenuItems.map(({ title }, key) => (
       <a href="#" key={key}>
-        <MenuItem>{title}</MenuItem>
+        <MenuItem placeholder={null}>{title}</MenuItem>
       </a>
     ));
    
@@ -178,11 +178,12 @@ function NavListMenu() {
           allowHover={true}
         >
           <MenuHandler>
-            <Typography as="div" variant="small" className="font-medium">
+            <Typography as="div" variant="small" className="font-medium" placeholder={null}>
               <ListItem
                 className="flex items-center gap-2 py-2 pr-4 font-medium text-white"
                 selected={isMenuOpen || isMobileMenuOpen}
                 onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+                placeholder={null}
               >
                 Deals
                 <ChevronDownIcon
@@ -200,7 +201,7 @@ function NavListMenu() {
               </ListItem>
             </Typography>
           </MenuHandler>
-          <MenuList className="hidden rounded-xl lg:block">
+          <MenuList className="hidden rounded-xl lg:block" placeholder={null}>
             {/* <Menu
               placement="right-start"
               allowHover
@@ -221,11 +222,11 @@ function NavListMenu() {
               </MenuHandler>
               <MenuList className="rounded-xl">{renderItems}</MenuList>
             </Menu> */}
-            <MenuItem>New</MenuItem>
-            <MenuItem>Freebies</MenuItem>
-            <MenuItem>Popular</MenuItem>
-            <MenuItem>Stores</MenuItem>
-            <MenuItem>Expiring Soon</MenuItem>
+            <MenuItem placeholder={null}>New</MenuItem>
+            <MenuItem placeholder={null}>Freebies</MenuItem>
+            <MenuItem placeholder={null}>Popular</MenuItem>
+            <MenuItem placeholder={null}>Stores</MenuItem>
+            <MenuItem placeholder={null}>Expiring Soon</MenuItem>
           </MenuList>
         </Menu>
         <div className="block lg:hidden">
@@ -238,7 +239,7 @@ function NavListMenu() {
               handler={setopenNestedMenu}
             >
               <MenuHandler className="flex items-center justify-between">
-                <MenuItem>
+                <MenuItem placeholder={null}>
                   Figma
                   <ChevronUpIcon
                     strokeWidth={2.5}
@@ -248,12 +249,12 @@ function NavListMenu() {
                   />
                 </MenuItem>
               </MenuHandler>
-              <MenuList className="block rounded-xl lg:hidden">
+              <MenuList className="block rounded-xl lg:hidden" placeholder={null}>
                 {renderItems}
               </MenuList>
             </Menu>
-            <MenuItem>React</MenuItem>
-            <MenuItem>TailwindCSS</MenuItem>
+            <MenuItem placeholder={null}>React</MenuItem>
+            <MenuItem placeholder={null}>TailwindCSS</MenuItem>
           </Collapse>
         </div>
       </React.Fragment>
@@ -285,7 +286,7 @@ function NavListMenu() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = nestedMenuItems.map(({ title }, key) => (
       <a href="#" key={key}>
-        <MenuItem>{title}</MenuItem>
+        <MenuItem placeholder={null}>{title}</MenuItem>
       </a>
     ));
    
@@ -298,11 +299,12 @@ function NavListMenu() {
           allowHover={true}
         >
           <MenuHandler>
-            <Typography as="div" variant="small" className="font-medium">
+            <Typography as="div" variant="small" className="font-medium" placeholder={null}>
               <ListItem
                 className="flex items-center gap-2 py-2 pr-4 font-medium text-white"
                 selected={isMenuOpen || isMobileMenuOpen}
                 onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+                placeholder={null}
               >
                 Forums
                 <ChevronDownIcon
@@ -320,7 +322,7 @@ function NavListMenu() {
               </ListItem>
             </Typography>
           </MenuHandler>
-          <MenuList className="hidden rounded-xl lg:block">
+          <MenuList className="hidden rounded-xl lg:block" placeholder={null}>
             {/* <Menu
               placement="right-start"
               allowHover
@@ -341,10 +343,10 @@ function NavListMenu() {
               </MenuHandler>
               <MenuList className="rounded-xl">{renderItems}</MenuList>
             </Menu> */}
-            <MenuItem>New</MenuItem>
-            <MenuItem>Hot</MenuItem>
-            <MenuItem>Unanswered</MenuItem>
-            <MenuItem>Polls</MenuItem>
+            <MenuItem placeholder={null}>New</MenuItem>
+            <MenuItem placeholder={null}>Hot</MenuItem>
+            <MenuItem placeholder={null}>Unanswered</MenuItem>
+            <MenuItem placeholder={null}>Polls</MenuItem>
           </MenuList>
         </Menu>
         <div className="block lg:hidden">
@@ -357,7 +359,7 @@ function NavListMenu() {
               handler={setopenNestedMenu}
             >
               <MenuHandler className="flex items-center justify-between">
-                <MenuItem>
+                <MenuItem placeholder={null}>
                   Figma
                   <ChevronUpIcon
                     strokeWidth={2.5}
@@ -367,12 +369,12 @@ function NavListMenu() {
                   />
                 </MenuItem>
               </MenuHandler>
-              <MenuList className="block rounded-xl lg:hidden">
+              <MenuList className="block rounded-xl lg:hidden" placeholder={null}>
                 {renderItems}
               </MenuList>
             </Menu>
-            <MenuItem>React</MenuItem>
-            <MenuItem>TailwindCSS</MenuItem>
+            <MenuItem placeholder={null}>React</MenuItem>
+            <MenuItem placeholder={null}>TailwindCSS</MenuItem>
           </Collapse>
         </div>
       </React.Fragment>
@@ -382,7 +384,7 @@ function NavListMenu() {
  
 function NavList() {
   return (
-    <List className="mb-6 mt-4 p-0 lg:mb-0 lg:mt-0 lg:flex-row lg:p-1">
+    <List className="mb-6 mt-4 p-0 lg:mb-0 lg:mt-0 lg:flex-row lg:p-1" placeholder={null}>
         <DealNavListMenu />
       <Typography
         as="a"
@@ -390,8 +392,9 @@ function NavList() {
         variant="small"
         color="white"
         className="font-medium"
+        placeholder={null}
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Live</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4" placeholder={null}>Live</ListItem>
       </Typography>
       <ForumNavListMenu />
 
@@ -413,6 +416,7 @@ function NavList() {
         variant="small"
         color="white"
         className="font-medium"
+        placeholder={null}
       >
         {/* <ListItem className="flex items-center gap-2 py-2 pr-4">Docs</ListItem> */}
       </Typography>
@@ -432,7 +436,7 @@ export function Header() {
  
   return (
     <div className="relative">
-    <Navbar className="mx-auto max-w-screen-3xl px-4 py-2 rounded-none shadow-none absolute" color="transparent" >
+    <Navbar className="mx-auto max-w-screen-3xl px-4 py-2 rounded-none shadow-none absolute" color="transparent" placeholder={null}>
       <div className="flex items-center justify-between text-white">
         <div
 
@@ -444,8 +448,8 @@ export function Header() {
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <Button size="sm">Get Started</Button>
-          <Button variant="outlined" size="sm" color="white">
+          <Button size="sm" placeholder={null}>Get Started</Button>
+          <Button variant="outlined" size="sm" color="white" placeholder={null}>
             Log In
           </Button>
         </div>
@@ -453,6 +457,7 @@ export function Header() {
           variant="text"
           className="lg:hidden"
           onClick={() => setOpenNav(!openNav)}
+          placeholder={null}
         >
           {openNav ? (
             <XMarkIcon className="h-6 w-6" strokeWidth={2} />
@@ -464,10 +469,10 @@ export function Header() {
       <Collapse open={openNav}>
         <NavList />
         <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button size="sm" fullWidth>
+          <Button size="sm" fullWidth placeholder={null}>
             Get Started
           </Button>
-          <Button variant="outlined" size="sm" color="white" fullWidth >
+          <Button variant="outlined" size="sm" color="white" fullWidth placeholder={null}>
             Log In
           </Button>
         </div>

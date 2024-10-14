@@ -1,4 +1,4 @@
-import {Typography} from "@material-tailwind/react";
+
 import BackgroundBlogCard from "./card_item";
 import "./home.css"
 

@@ -3,7 +3,7 @@ import Deals from "./assets/new_deal.jpg"
  
 export function CarouselSlides() {
   return (
-    <Carousel className="rounded-xl" autoplay="true" loop="true">
+    <Carousel className="rounded-xl" autoplay={true} loop={true} placeholder={null}>
       <div className="relative h-full w-full">
         <img
           src={Deals}
@@ -16,6 +16,7 @@ export function CarouselSlides() {
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              placeholder={null}
             >
               The Beauty of Nature
             </Typography>
@@ -23,6 +24,7 @@ export function CarouselSlides() {
               variant="lead"
               color="white"
               className="mb-12 opacity-80"
+              placeholder={null}
             >
               It is not so much for its beauty that the forest makes a claim
               upon men&apos;s hearts, as for that subtle something, that quality
@@ -30,10 +32,10 @@ export function CarouselSlides() {
               and renews a weary spirit.
             </Typography>
             <div className="flex justify-center gap-2">
-              <Button size="lg" color="white">
+              <Button size="lg" color="white" placeholder={null}>
                 Explore
               </Button>
-              <Button size="lg" color="white" variant="text">
+              <Button size="lg" color="white" variant="text" placeholder={null}>
                 Gallery
               </Button>
             </div>
@@ -52,6 +54,7 @@ export function CarouselSlides() {
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              placeholder={null}
             >
               The Beauty of Nature
             </Typography>
@@ -59,6 +62,7 @@ export function CarouselSlides() {
               variant="lead"
               color="white"
               className="mb-12 opacity-80"
+              placeholder={null}
             >
               It is not so much for its beauty that the forest makes a claim
               upon men&apos;s hearts, as for that subtle something, that quality
@@ -66,10 +70,10 @@ export function CarouselSlides() {
               and renews a weary spirit.
             </Typography>
             <div className="flex justify-center gap-2">
-              <Button size="lg" color="white">
+              <Button size="lg" color="white" placeholder={null}>
                 Explore
               </Button>
-              <Button size="lg" color="white" variant="text">
+              <Button size="lg" color="white" variant="text" placeholder={null}>
                 Gallery
               </Button>
             </div>
@@ -88,6 +92,7 @@ export function CarouselSlides() {
               variant="h1"
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              placeholder={null}
             >
               The Beauty of Nature
             </Typography>
@@ -95,6 +100,7 @@ export function CarouselSlides() {
               variant="lead"
               color="white"
               className="mb-12 opacity-80"
+              placeholder={null}
             >
               It is not so much for its beauty that the forest makes a claim
               upon men&apos;s hearts, as for that subtle something, that quality
@@ -102,10 +108,10 @@ export function CarouselSlides() {
               and renews a weary spirit.
             </Typography>
             <div className="flex justify-center gap-2">
-              <Button size="lg" color="white">
+              <Button size="lg" color="white" placeholder={null}>
                 Explore
               </Button>
-              <Button size="lg" color="white" variant="text">
+              <Button size="lg" color="white" variant="text" placeholder={null}>
                 Gallery
               </Button>
             </div>

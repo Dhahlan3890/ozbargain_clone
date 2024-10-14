@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {
   Card,
   CardHeader,
@@ -7,31 +7,40 @@ import {
 } from "@material-tailwind/react";
 import PropTypes from 'prop-types';
 
-function BackgroundBlogCard({ Heading, Name, Url }) {
+interface BackgroundBlogCardProps {
+  Heading: string;
+  Name: string;
+  Url: string;
+}
+
+function BackgroundBlogCard({ Heading, Name, Url }: BackgroundBlogCardProps) {
   return (
     <Card
       shadow={true}
       className="relative grid h-[14rem] w-full max-w-[20rem] items-end justify-center overflow-hidden text-center"
       style={{cursor:"pointer"}}
+      placeholder={null}
     >
       <CardHeader
         floated={false}
         shadow={false}
         color="transparent"
         className="absolute inset-0 m-0 h-full w-full rounded-none"
+        placeholder={null}
         style={{ backgroundImage: `url(${Url})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
       </CardHeader>
-      <CardBody className="relative py-14 px-6 md:px-12">
+      <CardBody className="relative py-14 px-6 md:px-12" placeholder={null}>
         <Typography
           variant="h5"
           color="white"
           className="mb-24 font-medium leading-[1.5]"
+          placeholder={null}
         >
           {Heading}
         </Typography>
-        <Typography variant="h5" className="mb-4 text-gray-400">
+        <Typography variant="h5" className="mb-4 text-gray-400" placeholder={null}>
           {Name}
         </Typography>
       </CardBody>
