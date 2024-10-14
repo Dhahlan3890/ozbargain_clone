@@ -410,7 +410,7 @@ function NavList() {
         </ListItem>
       </Typography> */}
       <NavListMenu />
-      <Typography
+      {/* <Typography
         as="a"
         href="#"
         variant="small"
@@ -419,7 +419,7 @@ function NavList() {
         placeholder={null}
       >
         <ListItem placeholder={null} className="flex items-center gap-2 py-2 pr-4">Docs</ListItem>
-      </Typography>
+      </Typography> */}
     </List>
   );
 }
