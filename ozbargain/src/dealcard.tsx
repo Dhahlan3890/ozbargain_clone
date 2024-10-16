@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Card,
   CardHeader,
@@ -13,7 +14,6 @@ export function DealCard({ Title, Img, Time, comments }: { Title: string; Img: s
       className="relative grid h-[20rem] w-full max-w-[18rem] items-end justify-center overflow-hidden text-center"
       style={{cursor:"pointer"}}
       placeholder={null}
-
     >
       <CardHeader
         floated={false}
