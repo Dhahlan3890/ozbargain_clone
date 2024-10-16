@@ -15,7 +15,7 @@ import { Fade } from "react-awesome-reveal";
     const togglePasswordVisiblity = () => setPasswordShown((cur) => !cur);
 
     return (
-    <Fade duration={2000} direction="down">
+    <Fade duration={2000}>
       <Card className="w-full flex-row" placeholder={null}>
         <CardHeader
         placeholder={null}
