@@ -14,14 +14,13 @@ export function DealCard({ Title, Img, Time, comments }: { Title: string; Img: s
       className="relative grid h-[20rem] w-full max-w-[18rem] items-end justify-center overflow-hidden text-center"
       style={{cursor:"pointer"}}
       placeholder={null}
-
     >
       <CardHeader
         floated={false}
         shadow={false}
         color="transparent"
         className="absolute inset-0 m-0 h-full w-full rounded-none bg-cover bg-center"
-        style={{ backgroundImage: `url('${Img}')` }}
+        style={{ backgroundImage: `url('${Img}')`}}
         placeholder={null}
       >
         <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50 to-transparent" />

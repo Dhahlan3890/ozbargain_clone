@@ -497,10 +497,10 @@ export function Header() {
       
       <div className="w-3/4 md:w-2/4 mr-auto ml-20" style={{marginLeft: window.innerWidth > 440 ? "150px" : "auto"}} id="welcomefont">
           <Fade duration={3000}>
-          <div style={{fontFamily:'Tropikal-Bold, sans-sarif', fontSize: window.innerWidth > 440 ? "100px" : "80px", marginLeft: window.innerWidth > 440 ? "80px" : "60px", color:"white"}}>Deals</div>
-          <div style={{fontFamily:'edwardianscriptitc, sans-sarif', fontSize: window.innerWidth > 440 ? "100px" : "80px", marginLeft: window.innerWidth > 440 ? "150px" : "120px", marginTop: window.innerWidth > 440 ? "-90px" : "-70px", color:"#5B3209"}}>of</div>
-          <div style={{fontFamily:'edwardianscriptitc, sans-sarif', fontSize: window.innerWidth > 440 ? "60px" : "40px", marginLeft: window.innerWidth > 440 ? "190px" : "150px", marginTop: window.innerWidth > 440 ? "-80px" : "-60px", color:"#5B3209"}}>the</div>
-          <div style={{fontFamily:'Tropikal-Bold, sans-sarif', fontSize: window.innerWidth > 440 ? "120px" : "100px", marginLeft: window.innerWidth > 440 ? "40px" : "20px", marginTop: window.innerWidth > 440 ? "-60px" : "-40px", color:"#5B3209"}}>future</div>
+          <div style={{fontFamily:'Tropikal-Bold, sans-sarif', fontSize: window.innerWidth > 440 ? "100px" : "80px", marginLeft: window.innerWidth > 440 ? "80px" : "-20px", color:"white"}}>Deals</div>
+          <div style={{fontFamily:'edwardianscriptitc, sans-sarif', fontSize: window.innerWidth > 440 ? "100px" : "80px", marginLeft: window.innerWidth > 440 ? "150px" : "60px", marginTop: window.innerWidth > 440 ? "-90px" : "-70px", color:"#5B3209"}}>of</div>
+          <div style={{fontFamily:'edwardianscriptitc, sans-sarif', fontSize: window.innerWidth > 440 ? "60px" : "40px", marginLeft: window.innerWidth > 440 ? "190px" : "90px", marginTop: window.innerWidth > 440 ? "-80px" : "-60px", color:"#5B3209"}}>the</div>
+          <div style={{fontFamily:'Tropikal-Bold, sans-sarif', fontSize: window.innerWidth > 440 ? "120px" : "100px", marginLeft: window.innerWidth > 440 ? "40px" : "-40px", marginTop: window.innerWidth > 440 ? "-60px" : "-40px", color:"#5B3209"}}>future</div>
           </Fade>
         {/* <Typography
           variant="h1"
