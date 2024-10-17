@@ -45,7 +45,7 @@ export default function Home() {
           </Typography>
         </div>
         <div className="flex justify-center">
-        <Typography variant="h5" className="mb-4 text-gray-400" placeholder={null}>
+        <Typography variant="h5" className="m-4 text-gray-400" placeholder={null}>
           Check out what's getting the most on OZBargain right now
         </Typography>
         </div>

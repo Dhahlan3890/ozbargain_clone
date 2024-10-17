@@ -12,7 +12,7 @@
 #card-set{
     display: flex;
     margin-top: 20px;
-    width: 2000px;
+    width: 1950px;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -92,5 +92,18 @@
 @media (max-width: 440px) {
     #welcomefont {
         font-size: 20px;
+    }
+
+    #card-set{
+        display: flex;
+        margin-top: 20px;
+        width: 1500px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        background: white;
+        gap: 30px;
+        display: flex;
+        transition: transform 0.3s ease-in-out;
     }
   }
