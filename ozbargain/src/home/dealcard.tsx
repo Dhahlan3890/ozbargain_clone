@@ -36,7 +36,7 @@ export function DealCard({ Title, Img, Time, comments }: { Title: string; Img: s
         </Typography>
         <Typography variant="h5" className="mb-4 text-gray-400" placeholder={null}>
           {Time} Ago
-        </Typography>
+        </Typography> 
         <Typography variant="h5" className="mb-4 text-gray-400" placeholder={null}>
           {comments} comments
         </Typography>

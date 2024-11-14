@@ -452,7 +452,7 @@ export function Header() {
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <Button size="sm" placeholder={null}>Get Started</Button>
+          <Button size="sm" placeholder={null} onClick={() => navigate("/signup")}>Get Started</Button>
           <Button variant="outlined" size="sm" color="white" placeholder={null} onClick={() => navigate("/login")}>
             Log In
           </Button>

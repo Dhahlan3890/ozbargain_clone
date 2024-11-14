@@ -9,6 +9,8 @@ import { useState } from "react";
 import { Typography, Input, Button } from "@material-tailwind/react";
 import { EyeSlashIcon, EyeIcon } from "@heroicons/react/24/solid";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
+import LoginImage from "../assets/login_image.jpg"
    
   export function Login() {
     const [passwordShown, setPasswordShown] = useState(false);
@@ -21,30 +23,29 @@ import { Fade } from "react-awesome-reveal";
         placeholder={null}
           shadow={false}
           floated={false}
-          className="m-0 w-2/5 shrink-0 rounded-r-none"
+          className="m-0 w-1/2 shrink-0 rounded-r-none"
         >
-          <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
-            alt="card-image"
-            className="h-full w-full object-cover"
-            loading="lazy"
-          />
-        </CardHeader>
-        <CardBody className="w-full" placeholder={null}>
-        <section className="grid text-center h-screen w-full items-center p-8">
+            <div className="h-screen">
+            <div
+            className="ml-3 pt-5"
+            style={{fontFamily:"DMSans, sans-sarif", fontSize:"24px", color:"black", fontWeight:"600"}}
+            >
+            OZBARGAIN CLONE
+            </div>
+            <section className="grid text-center h-screen w-full items-center">
             <div>
-                <Typography variant="h3" color="blue-gray" className="mb-2" placeholder={null}>
-                Sign In
+                <Typography variant="h4" color="blue-gray" className="mb-2" placeholder={null}>
+                Welcome Back
                 </Typography>
-                <Typography className="mb-16 text-gray-600 font-normal text-[18px]" placeholder={null}>
-                Enter your email and password to sign in
+                <Typography className="mb-8 text-gray-600 font-normal text-[16px]" placeholder={null}>
+                Please enter your Details
                 </Typography>
-                <form action="#" className="mx-auto max-w-[24rem] text-left">
-                <div className="mb-6">
+                <form action="#" className="mx-auto max-w-[20rem] text-left">
+                <div className="mb-4">
                     <label htmlFor="email">
                     <Typography
                         variant="small"
-                        className="mb-2 block font-medium text-gray-900"
+                        className="mb-1 block font-medium text-gray-900"
                         placeholder={null}
                     >
                         Your Email
@@ -54,7 +55,7 @@ import { Fade } from "react-awesome-reveal";
                     crossOrigin={null}
                     id="email"
                     color="gray"
-                    size="lg"
+                    size="md"
                     type="email"
                     name="email"
                     placeholder="name@mail.com"
@@ -64,11 +65,11 @@ import { Fade } from "react-awesome-reveal";
                     }}
                     />
                 </div>
-                <div className="mb-6">
+                <div className="mb-4">
                     <label htmlFor="password">
                     <Typography
                         variant="small"
-                        className="mb-2 block font-medium text-gray-900"
+                        className="mb-1 block font-medium text-gray-900"
                         placeholder={null}
                     >
                         Password
@@ -76,7 +77,7 @@ import { Fade } from "react-awesome-reveal";
                     </label>
                     <Input
                     crossOrigin={null}
-                    size="lg"
+                    size="md"
                     placeholder="********"
                     labelProps={{
                         className: "hidden",
@@ -86,24 +87,24 @@ import { Fade } from "react-awesome-reveal";
                     icon={
                         <i onClick={togglePasswordVisiblity}>
                         {passwordShown ? (
-                            <EyeIcon className="h-5 w-5" />
+                            <EyeIcon className="h-4 w-4" />
                         ) : (
-                            <EyeSlashIcon className="h-5 w-5" />
+                            <EyeSlashIcon className="h-4 w-4" />
                         )}
                         </i>
                     }
                     />
                 </div>
-                <Button color="gray" size="lg" className="mt-6" fullWidth placeholder={null}>
+                <Button color="gray" size="md" className="mt-4" fullWidth placeholder={null}>
                     sign in
                 </Button>
-                <div className="!mt-4 flex justify-end">
+                <div className="!mt-2 flex justify-end">
                     <Typography
                     as="a"
                     href="#"
                     color="blue-gray"
                     variant="small"
-                    className="font-medium"
+                    className="font-medium text-sm"
                     placeholder={null}
                     >
                     Forgot password
@@ -111,31 +112,42 @@ import { Fade } from "react-awesome-reveal";
                 </div>
                 <Button
                     variant="outlined"
-                    size="lg"
-                    className="mt-6 flex h-12 items-center justify-center gap-2"
+                    size="md"
+                    className="mt-4 flex h-10 items-center justify-center gap-2"
                     fullWidth placeholder={null}
                 >
                     <img
                     src={`https://www.material-tailwind.com/logos/logo-google.png`}
                     alt="google"
-                    className="h-6 w-6"
+                    className="h-5 w-5"
                     />{" "}
                     sign in with google
                 </Button>
                 <Typography
                     variant="small"
                     color="gray"
-                    className="!mt-4 text-center font-normal"
+                    className="!mt-3 text-center font-normal text-sm"
                     placeholder={null}
                 >
                     Not registered?{" "}
-                    <a href="#" className="font-medium text-gray-900">
+                    <Link to="/signup" className="font-medium text-gray-900 hover:text-gray-700 transition-colors">
                     Create account
-                    </a>
+                    </Link>
                 </Typography>
                 </form>
             </div>
             </section>
+            </div>
+          
+        </CardHeader>
+        <CardBody className="w-full m-0 p-2" placeholder={null}>
+        <img
+            src={LoginImage}
+            alt="card-image"
+            className="h-full w-full object-cover"
+            loading="lazy"
+            style={{borderRadius:"5px"}}
+          />
           
         </CardBody>
       </Card>
